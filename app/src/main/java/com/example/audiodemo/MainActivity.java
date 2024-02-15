@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }else{
                 mediaPlayer = MediaPlayer.create(MainActivity.this,SongList.get(i).getSongRaw());
                 mediaPlayer.start();
+                songAdapter2.setSelectedInd(i);
             }
 
 
